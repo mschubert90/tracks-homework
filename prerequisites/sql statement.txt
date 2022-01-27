@@ -1,0 +1,3 @@
+SELECT * FROM co2_emission_analytics.shipments
+INNER JOIN co2_emission_analytics.shipment_co2_emissions ON co2_emission_analytics.shipments.id = co2_emission_analytics.shipment_co2_emissions.shipment_id
+ORDER BY co2_emission_analytics.shipment_co2_emissions.shipment_id
